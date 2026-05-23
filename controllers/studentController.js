@@ -1,14 +1,13 @@
 const students = require("../models/studentModel");
 
 
-// GET all students
 exports.getStudents = (req, res) => {
 
     res.json(students);
 };
 
 
-// POST add student
+
 exports.addStudent = (req, res) => {
 
     const newStudent = {
@@ -27,7 +26,7 @@ exports.addStudent = (req, res) => {
 };
 
 
-// PUT update student
+
 exports.updateStudent = (req, res) => {
 
     const id = parseInt(req.params.id);
@@ -51,7 +50,6 @@ exports.updateStudent = (req, res) => {
 };
 
 
-// DELETE student
 exports.deleteStudent = (req, res) => {
 
     const id = parseInt(req.params.id);
